@@ -1,3 +1,13 @@
-import UIKit
+import Foundation
 
-var str = "Hello, playground"
+let pizzaInInches: Int = 10
+
+var numberOfSlices: Int {
+    return pizzaInInches - 8
+}
+
+print("\(numberOfSlices)")
+
+
+
+
