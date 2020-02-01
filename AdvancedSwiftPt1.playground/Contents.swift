@@ -3,10 +3,16 @@ import Foundation
 let pizzaInInches: Int = 10
 
 var numberOfSlices: Int {
-    return pizzaInInches - 8
+    get{
+       return pizzaInInches - 8
+    }
+    set{
+        print("The number is \(newValue)")
+    }
+    
 }
 
-print("\(numberOfSlices)")
+numberOfSlices = 100
 
 
 
