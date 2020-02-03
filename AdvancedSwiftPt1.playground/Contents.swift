@@ -1,18 +1,22 @@
-import Foundation
 
-let pizzaInInches: Int = 10
+var width: Float = 1.5
+var height: Float = 2.3
 
-var numberOfSlices: Int {
+var bucketsOfPaint: Int {
     get{
-       return pizzaInInches - 8
+        let wide = width * height
+          let needOfPaint : Float = 1.5
+          let numberOfBuckets =  wide / needOfPaint
+          return Int(numberOfBuckets)
     }
     set{
-        print("The number is \(newValue)")
+        let wideCanCover = Double(newValue)*1.5
+        print("Can cover \(wideCanCover)")
     }
-    
+  
 }
 
-numberOfSlices = 100
+bucketsOfPaint = 8
 
 
 
